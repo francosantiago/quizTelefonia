@@ -36,7 +36,7 @@ public class PanelEntradaDatos extends JPanel
         setBackground(Color.GRAY);
         
         //Creación y adicion de la imagen
-        iImagen = new ImageIcon(getClass().getResource("/vista/planMovil.png"));
+        iImagen = new ImageIcon(getClass().getResource("/vista/telefono.png"));
         lbImagen = new JLabel(iImagen);
         lbImagen.setBounds(10,15,150,170);
         add(lbImagen);
