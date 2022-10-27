@@ -60,7 +60,7 @@ public class PanelEntradaDatos extends JPanel
         
         //Creación y adición de campos de texto
         tfNumero = new JTextField("");
-        tfNumero.setBounds(280, 10, 80, 20);
+        tfNumero.setBounds(270, 10, 100, 20);
         add(tfNumero);
         
         tfMinutos = new JTextField("");
