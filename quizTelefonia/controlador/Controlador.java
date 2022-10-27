@@ -62,7 +62,7 @@ public class Controlador implements ActionListener
             } 
         }
         
-        if(comando.equals("Saldo"))
+        else if(comando.equals("Saldo"))
         {
             int Minutos = Integer.parseInt(venPrin.miPanelEntradaDatos.getMinutos());
             int Costo = Integer.parseInt(venPrin.miPanelEntradaDatos.getCosto());
@@ -72,6 +72,11 @@ public class Controlador implements ActionListener
             model.Descuento(Operador);
 
             venPrin.miPanelResultado.mostrarResultado("\nEl saldo a pagar por este plan es de: " + model.getSaldo());
+        }
+
+        else if(comando.equals("Salir"))
+        {
+            System.exit(0);
         }
     }    
 }

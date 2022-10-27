@@ -17,6 +17,7 @@ public class PanelOperaciones extends JPanel
     //----------------------
     public JButton bAñadir;
     public JButton bSaldo;
+    public JButton bSalir;
     
     //----------------------
     //Metodos
@@ -32,22 +33,29 @@ public class PanelOperaciones extends JPanel
         //Creación y adicion de los botones
         bAñadir = new JButton("Añadir");
         bAñadir.setFont(new Font("Arial", BOLD, 12));
-        bAñadir.setBounds(10,20,90,20);
+        bAñadir.setBounds(10,20,80,20);
         add(bAñadir);
         bAñadir.setActionCommand("añadir");
         
         
         bSaldo = new JButton("Calcular saldo");
         bSaldo.setFont(new Font("Arial", BOLD, 12));
-        bSaldo.setBounds(200,20,120,20);
+        bSaldo.setBounds(120,20,120,20);
         add(bSaldo);
         bSaldo.setActionCommand("Saldo");
         bSaldo.setEnabled(false);
+
+        bSalir = new JButton("Salir");
+        bSalir.setFont(new Font("Arial", BOLD, 12));
+        bSalir.setBounds(260,20,90,20);
+        add(bSalir);
+        bSalir.setActionCommand("Salir");
         
         //Borde y titulo del panel
         TitledBorder borde = BorderFactory.createTitledBorder("Operaciones");
         borde.setTitleColor(Color.RED);
         setBorder(borde);
+
     }
 
     public void agregarOyentesBotones(ActionListener pAL)

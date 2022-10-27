@@ -42,7 +42,7 @@ public class PanelEntradaDatos extends JPanel
         add(lbImagen);
         
         //Creación y adición de etiquetas Color, PosX y PosY
-        lbNumero = new JLabel("# telefónico = ");
+        lbNumero = new JLabel("Número tel = ");
         lbNumero.setBounds(190,10,80,20);
         add(lbNumero);
         
