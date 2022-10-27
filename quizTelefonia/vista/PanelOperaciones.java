@@ -46,7 +46,7 @@ public class PanelOperaciones extends JPanel
         
         //Borde y titulo del panel
         TitledBorder borde = BorderFactory.createTitledBorder("Operaciones");
-        borde.setTitleColor(Color.BLUE);
+        borde.setTitleColor(Color.RED);
         setBorder(borde);
     }
 

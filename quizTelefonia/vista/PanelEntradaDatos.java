@@ -33,7 +33,7 @@ public class PanelEntradaDatos extends JPanel
     {
         //Definicion del contendor del panel
         setLayout(null);
-        setBackground(Color.GRAY);
+        setBackground(Color.WHITE);
         
         //Creación y adicion de la imagen
         iImagen = new ImageIcon(getClass().getResource("/vista/telefono.png"));
@@ -42,8 +42,8 @@ public class PanelEntradaDatos extends JPanel
         add(lbImagen);
         
         //Creación y adición de etiquetas Color, PosX y PosY
-        lbNumero = new JLabel("Numero = ");
-        lbNumero.setBounds(220,10,80,20);
+        lbNumero = new JLabel("# telefónico = ");
+        lbNumero.setBounds(190,10,80,20);
         add(lbNumero);
         
         lbMinutos = new JLabel("Minutos deseados =");
@@ -51,33 +51,33 @@ public class PanelEntradaDatos extends JPanel
         add(lbMinutos);
         
         lbCosto = new JLabel("Costo por minuto =");
-        lbCosto.setBounds(197,70,120,20);
+        lbCosto.setBounds(190,70,120,20);
         add(lbCosto);
         
         lbOperador = new JLabel("Operador =");
-        lbOperador.setBounds(240,100,100,20);
+        lbOperador.setBounds(190,100,100,20);
         add(lbOperador);
         
         //Creación y adición de campos de texto
-        tfNumero = new JTextField("31");
+        tfNumero = new JTextField("");
         tfNumero.setBounds(280, 10, 80, 20);
         add(tfNumero);
         
-        tfMinutos = new JTextField("500");
+        tfMinutos = new JTextField("");
         tfMinutos.setBounds(305, 40, 60, 20);
         add(tfMinutos);
         
-        tfCosto = new JTextField("100");
+        tfCosto = new JTextField("");
         tfCosto.setBounds(305, 70, 60, 20);
         add(tfCosto);
 
-        tfOperador = new JTextField("Movilujo");
-        tfOperador.setBounds(305, 100, 60, 20);
+        tfOperador = new JTextField("");
+        tfOperador.setBounds(260, 100, 100, 20);
         add(tfOperador);
         
         //Borde y titulo del panel
         TitledBorder borde = BorderFactory.createTitledBorder("Entrada de Datos");
-        borde.setTitleColor(Color.BLUE);
+        borde.setTitleColor(Color.RED);
         setBorder(borde);
     }
     

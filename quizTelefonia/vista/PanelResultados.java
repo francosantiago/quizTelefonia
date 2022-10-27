@@ -40,7 +40,7 @@ public class PanelResultados extends JPanel
         
         //Borde y titulo del panel
         TitledBorder borde = BorderFactory.createTitledBorder("Resultados");
-        borde.setTitleColor(Color.BLUE);
+        borde.setTitleColor(Color.RED);
         setBorder(borde);
     }
     
