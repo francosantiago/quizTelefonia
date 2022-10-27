@@ -33,12 +33,12 @@ public class PanelEntradaDatos extends JPanel
     {
         //Definicion del contendor del panel
         setLayout(null);
-        setBackground(Color.WHITE);
+        setBackground(Color.GRAY);
         
         //Creación y adicion de la imagen
         iImagen = new ImageIcon(getClass().getResource("/vista/planMovil.png"));
         lbImagen = new JLabel(iImagen);
-        lbImagen.setBounds(10,10,176,176);
+        lbImagen.setBounds(10,15,150,170);
         add(lbImagen);
         
         //Creación y adición de etiquetas Color, PosX y PosY
